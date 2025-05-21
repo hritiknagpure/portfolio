@@ -86,27 +86,27 @@
         </section>
 
         <!--===== ABOUT =====-->
-        <section class="about section " id="about">
-            <h2 class="section-title">About</h2>
+<section class="about section" id="about">
+    <h2 class="section-title">About</h2>
 
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="assets/img/IMG_20190707_214241_783-removebg.png" alt="">
-                </div>
+    <div class="about__container bd-grid">
+        <div class="about__img">
+            <img src="assets/img/IMG_20190707_214241_783-removebg.png" alt="Hritik Nagpure">
+        </div>
 
-                <div>
-                    <h2 class="about__subtitle">
-                        Let Me
-                        Introduce
-                        Myself😎.
-                    </h2>
-                    <p class="about__text">"I’m Hritik Nagpure, a 24-year-old full-stack software developer based in Nagpur, India, with a strong academic background in Computer Science and Engineering. I specialize in developing scalable web applications using technologies like C#, Java, ASP.NET Web API, ASP.NET MVC, HTML, CSS, JavaScript, SQL, MySQL, and JDBC.
+        <div>
+            <h2 class="about__subtitle">Let Me Introduce Myself 😎</h2>
+            <p class="about__text">
+                I’m Hritik Nagpure, a 24-year-old full-stack software developer based in Nagpur, India. I hold a degree in Computer Science and Engineering and have a strong foundation in building scalable and efficient web applications.
+                <br><br>
+                My technical skillset includes C#, Java, ASP.NET Web API, ASP.NET MVC, HTML, CSS, JavaScript, SQL Server, MySQL, and JDBC. I am proficient in Object-Oriented Programming and have solid experience with data structures and algorithms.
+                <br><br>
+                I have worked extensively on both front-end and back-end technologies and am passionate about creating robust, high-performance systems. I'm constantly seeking opportunities to grow and improve in full-stack development.
+            </p>
+        </div>
+    </div>
+</section>
 
-                        Proficient in Object-Oriented Programming, data structures, and algorithms, I bring hands-on experience in both front-end and back-end development. I am passionate about building robust, high-performance systems and continuously advancing my expertise in full-stack development."</p>
-
-                </div>
-            </div>
-        </section>
 
         <!--===== SKILLS =====-->
         <section class="skills section" id="skills">
@@ -215,22 +215,40 @@
                         <img src="assets/img/plantes.jpg"  alt="" class="portfolio_img" >
                         <br>
                         <div class="portfolio_data">
-                            <p class="portfolio_description">This website is to provide you information all
-                                about our different planets. Technology used-
-                                [React & Bootstrap]
+                            <p class="portfolio_description">This website provides information about our different planets. Technologies used: React and Bootstrap.
                                 </p>
+                                <br>
                             <a href="https://hritikplanets.netlify.app/" target="_blank"  class="button button--flex button--small portfolio_button">
                                 Demo
                                 <i class="uil uil-arrow-right button_icon"></i>
                             </a>
                         </div>
                     </div>
+                    <!-- ============ -->
+                      <div class="portfolio_content grid swiper-slide">
+                        <img src="assets/img/Screenshot (79) (1).png"  alt="" class="portfolio_img" >
+                        <br>
+                        <div class="portfolio_data">
+                           <p class="portfolio_description" style="text-align: justify;">
+    I developed a web-based application using ASP.NET Core MVC to streamline sports turf bookings, enabling users to check real-time availability and receive instant booking confirmations. The application includes a feature for downloading ticket invoices. I designed the front end using HTML, CSS, and Bootstrap to ensure a responsive and user-friendly interface. Additionally, I optimized the booking workflow and data handling to enhance overall performance and improve processing efficiency.
+</p>
+
+                            <a href="https://github.com/hritiknagpure/TurfBookingProject" target="_blank"  class="button button--flex button--small portfolio_button">
+                                Demo
+                                <i class="uil uil-arrow-right button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                <!-- ====== -->
+
+
                     <!-- ========= -->
                     <div class="portfolio_content grid swiper-slide">
                         <img src="assets/img/portfoliorersize.jpg"  alt="" class="portfolio_img" >
                         <br>
                         <div class="portfolio_data">
-                            <p class="portfolio_description">I have developed and curated my own portfolio website, showcasing a diverse range of skills and projects. This platform accurately represents my proficiency and expertise in various areas.</p>
+                            <p class="portfolio_description" style="text-align: justify;">I have developed and curated my own portfolio website, showcasing a diverse range of skills and projects. This platform accurately represents my proficiency and expertise in various areas.</p>
+                            <br>
                             <a href="index.html" target="_blank" class="button button--flex button--small portfolio_button">
                                 Demo
                                 <i class="uil uil-arrow-right button_icon"></i>
@@ -255,7 +273,7 @@
                         <img src="assets/img/Screenshot (6).png"  alt="" class="portfolio_img" >
                         <br>
                         <div class="portfolio_data">
-                            <p class="portfolio_description">In this website display a list of common
+                            <p class="portfolio_description " style="text-align: justify;">In this website display a list of common
                                 information about that country including an
                                 image of the country’s flag. Technology used HTML, CSS and JavaScript.</p>
                             <a href="https://hritiknagpure.github.io/country/" target="_blank" class="button button--flex button--small portfolio_button">
@@ -298,19 +316,62 @@
        
         <!--===== CONTACT =====-->
 
-        <section class="contact section" id="contact">
-            <h2 class="section-title">Contact</h2>
+     <section class="contact section" id="contact">
+  <h2 class="section-title">Contact</h2>
 
-            <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
-                    <textarea name="" id="" placeholder="Your message.❤"  cols="0" rows="10" class="contact__input"></textarea>
-                    
-                    <input type="button" value="Sumbit"  class="contact__button button" >
-                </form>
-            </div>
-        </section>
+  <div class="contact__container bd-grid">
+    <form action="" class="contact__form" id="contactForm" novalidate>
+      <!-- Name Field -->
+      <input type="text" placeholder="Name" class="contact__input" name="name" required>
+
+      <!-- Email Field with validation pattern -->
+      <input type="email" placeholder="Email" class="contact__input" name="email"
+             required
+             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+             title="Enter a valid email address">
+
+      <!-- Message Field -->
+      <textarea placeholder="Your message.❤" cols="30" rows="10"
+                class="contact__input" name="message" required></textarea>
+
+      <!-- Submit Button -->
+      <input type="button" value="Submit" class="contact__button button" onclick="submitMessage()">
+    </form>
+
+    <!-- Success Message -->
+    <p id="successMessage" style="color: green; display: none; margin-top: 10px;">
+      Your message has been sent successfully ✅
+    </p>
+  </div>
+</section>
+
+
+<script>
+    function submitMessage() {
+        // You can add validation here if needed
+        document.getElementById("successMessage").style.display = "block";
+
+        // Optionally reset the form
+        document.getElementById("contactForm").reset();
+    }
+
+
+ function submitMessage() {
+    const form = document.getElementById("contactForm");
+
+    // Check if form is valid
+    if (form.checkValidity()) {
+      // Normally you would send form data here (e.g., via fetch)
+      document.getElementById("successMessage").style.display = "block";
+      form.reset(); // Optional: clear the form after submission
+    } else {
+      form.reportValidity(); // Show validation messages
+    }
+  }
+
+
+</script>
+
     </main>
     
 
@@ -338,18 +399,20 @@
     <script src="assets/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
 referrerpolicy="no-referrer"></script>
-    <script>
-        
-        var typed = new Typed('.home__title-color', {
-            strings: [ "Student","fronted-Developer","Java developer", "BackendDeveloper","Editior","Photographer","fronted-Developer","Java Fullstack developer", "Developer","Editior","Photographer","Student","fronted-Developer","java developer", "Developer","Editior","Photographer","Student","fronted-Developer","java developer", "Developer","Editior","Photographer","Student","fronted-Developer","java developer", "Developer","Editior","Photographer"  ],
-            typeSpeed: 200,
-            backSpeed: 150,
-            loops: true,
-            
-        })
-        
-     
-    </script>
+   <script>
+    var typed = new Typed('.home__title-color', {
+        strings: [
+            ".NET Developer", "Fullstack Developer", "Frontend Developer", "Backend Developer",
+            "Java Developer", ".NET Developer", "Fullstack Developer", "Frontend Developer", "Backend Developer",
+        ],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true,
+        backDelay: 1000, // Wait 1 second before deleting
+        smartBackspace: true // Only backspace what’s necessary
+    });
+</script>
+
 
 </body>
 
